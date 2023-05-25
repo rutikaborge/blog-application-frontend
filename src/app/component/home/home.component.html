@@ -1,0 +1,34 @@
+<div class="container mt-3">
+    <h2>Tech Related Blogs</h2>
+    <div class="mt-4 p-5 bg-primary text-white rounded" style="
+    background-image: url('assets/Image.webp');
+    height: 400px;height:400px;
+    ">
+    <br><br>
+      <h1>Food Blog</h1> 
+      <p class="blog">Bliss on a plate.</p>
+      <!-- <p>“Good! But busy.” “Tired, but good!” It’s amazing how many of our answers are some sort of combination of “good” and “busy” as if those two go together like peanut butter and jelly. We wear busyness as a badge of honor. But is it? I guess that depends. After all, I think a more precise word people mean is “hurried.”</p>  -->
+    </div>
+  </div>
+<br/>
+<div class="container">
+    
+<div class="row">    
+
+
+  <div class="card" style="width: 15rem;" *ngFor="let post of posts">
+    <img class="card-img-top" src="data:image/png;base64,{{post.postImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title">{{post.postTitle}}</h6>
+     <p class="content">{{post.postContent | slice : 0 :50 }}...</p>
+      <a href="/post/{{post.postId}}" class="btn btn-primary btn-sm ">Read More</a>
+    </div>
+    
+  </div>
+
+  
+  
+ 
+</div>
+</div>
+<br/>
